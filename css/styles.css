@@ -1,0 +1,116 @@
+:root {
+  --white-bg: #ffffff;
+  --dark: #2e2f42;
+  --pressed-state: #404bbf;
+  --primary-brand: #4d5ae5;
+  --primary-text: #434455;
+  --btn-secondary: #f4f4fd;
+}
+
+body {
+  color: var(--primary-text);
+  background-color: var(--white-bg);
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Colors */
+/* white-bg #FFFFFF */
+/* light-mode-bg #F4F4FD  (header border)*/
+/* hero-bg #2E2F42 */
+
+/* Header */
+
+/* Logo */
+.logo {
+  color: var(--dark);
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Navigation */
+.nav .link {
+  color: var(--dark);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+/* Contacts */
+.contact {
+  color: var(--dark);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+.contact:hover,
+.contact:active {
+  color: var(--pressed-state);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--dark);
+}
+.hero-title {
+  color: var(--white-bg);
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+}
+
+.button-primary {
+  background-color: var(--primary-brand);
+  color: var(--white-bg);
+}
+
+/* Features */
+.title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+/* Our team */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.section .team-member {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark);
+  color: var(--btn-secondary);
+}
+
+.footer-logo {
+  color: var(--btn-secondary);
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
