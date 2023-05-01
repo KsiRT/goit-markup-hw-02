@@ -11,7 +11,7 @@
 body {
   color: var(--primary-text);
   background-color: var(--white-bg);
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -78,6 +78,7 @@ body {
 .button-primary {
   background-color: var(--primary-brand);
   color: var(--white-bg);
+  cursor: pointer;
 }
 
 /* Features */
@@ -127,6 +128,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  cursor: pointer;
 }
 
 .filter-btn:hover,
@@ -136,6 +138,10 @@ body {
 }
 
 /* Examples */
+.project-examples {
+  background-color: var(--white-bg);
+}
+
 .example {
   text-decoration: none;
 }
