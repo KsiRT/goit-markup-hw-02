@@ -5,6 +5,7 @@
   --primary-brand: #4d5ae5;
   --primary-text: #434455;
   --btn-secondary: #f4f4fd;
+  --btn-primary: #e7e9fc;
 }
 
 body {
@@ -32,6 +33,9 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
+}
+.accent {
+  color: var(--primary-brand);
 }
 
 /* Navigation */
@@ -112,5 +116,26 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Portfolio */
+.filter-btn {
+  color: var(--primary-brand);
+  background-color: var(--btn-primary);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.filter-btn:hover,
+.filter-btn:active {
+  color: var(--white-bg);
+  background-color: var(--pressed-state);
+}
+
+/* Examples */
+.example {
   text-decoration: none;
 }
