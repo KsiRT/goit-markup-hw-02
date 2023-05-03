@@ -105,7 +105,13 @@ body {
 .button-hero:focus {
   background-color: var(--pressed-state);
 }
-
+.section {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--dark);
+}
 /* Features */
 .title {
   font-weight: 500;
@@ -113,6 +119,15 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--dark);
+}
+
+.feature {
+  color: var(--primary-text);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 /* Our team */
@@ -138,15 +153,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-text);
-}
-
-.section {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  text-align: center;
-  letter-spacing: 0.02em;
-  color: var(--dark);
 }
 
 /* Footer */
