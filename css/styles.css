@@ -26,27 +26,35 @@ body {
 
 /* Logo */
 .logo {
-  color: var(--dark);
-  font-family: Raleway;
+  color: var(--primary-brand);
+  font-family: Raleway sans-serif;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.17;
+  font-weight: 800;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-decoration: none;
 }
 .accent {
-  color: var(--primary-brand);
+  color: var(--dark);
 }
 
 /* Navigation */
-.nav .link {
-  color: var(--dark);
-  font-size: 16px;
+.nav-link {
   font-weight: 500;
+  font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-decoration: none;
-}
+  color: var(--dark);
+  }
+
+  .list {
+    list-style: none;
+  }
+
+  .link {
+    text-decoration: none;
+  }
 
 /* Contacts */
 .contact {
@@ -59,7 +67,7 @@ body {
 }
 
 .contact:hover,
-.contact:active {
+.contact:focus {
   color: var(--pressed-state);
 }
 
@@ -111,13 +119,16 @@ body {
 }
 
 .footer-logo {
-  color: var(--btn-secondary);
-  font-family: Raleway;
+  color: var(--primary-brand);
+  font-family: Raleway sans-serif; 
+  font-weight: 800;
   font-size: 18px;
-  line-height: 1.2;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-decoration: none;
+}
+.accent-footer {
+  color: var(--white-bg);
 }
 
 /* Portfolio */
@@ -145,3 +156,83 @@ body {
 .example {
   text-decoration: none;
 }
+
+/* Вопрос по классам логотипа. Альтернатва написания
+: 
+html: 
+
+    <!-- Header -->
+    <header>
+      <nav class="nav">
+        <a class="logo" href="./index.html"
+          ><span class="accent">Web</span>Studio</a
+        >
+        <ul>
+          <li><a class="link" href="./index.html">Studio</a></li>
+          <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="link" href="#">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <address>
+        <ul>
+          <li>
+            <a class="contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a class="contact" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+        </ul>
+      </address>
+    </header> 
+    -----------------------------------------------------
+        <!-- Footer -->
+    <footer class="footer">
+      <a class="footer-logo" href="./index.html"
+        ><span class="accent">Web</span>Studio</a
+      >
+      <p>
+        Increase the flow of customers and sales for your business with digital
+        marketing & growth solutions.
+      </p>
+    </footer>
+    ----------------------------------------------------
+    
+
+
+    И его СSS: 
+
+
+.logo {
+  color: var(--dark);
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.accent {
+  color: var(--primary-brand);
+}
+---------------------------------------------------------    
+
+
+.footer {
+  background-color: var(--dark);
+  color: var(--btn-secondary);
+}
+
+.footer-logo {
+  color: var(--btn-secondary);
+  font-family: Raleway;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+*/
