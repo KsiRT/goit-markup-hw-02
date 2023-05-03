@@ -181,7 +181,7 @@ body {
 }
 
 .filter-btn:hover,
-.filter-btn:active {
+.filter-btn:focus {
   color: var(--white-bg);
   background-color: var(--pressed-state);
 }
